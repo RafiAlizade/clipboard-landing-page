@@ -1,0 +1,546 @@
+@font-face {
+  font-family: Bai Jamjuree SemiBold;
+  src: url("../font/BaiJamjuree-SemiBold.ttf");
+}
+@font-face {
+  font-family: Bai Jamjuree;
+  src: url("../font/BaiJamjuree-Regular.ttf");
+}
+@font-face {
+  font-family: Bai Jamjuree Medium;
+  src: url("../font/BaiJamjuree-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.hero {
+  background: url("../images/Bitmap 2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .hero_inner {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+.hero .hero_inner_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+.hero .hero_inner_buttons > a {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.hero_inner_h1 {
+  text-align: center;
+  width: auto;
+  font-family: Bai Jamjuree SemiBold;
+  font-size: 2.8rem;
+  color: #4C545C;
+}
+
+.hero_inner_paragraph {
+  color: #9EABB2;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: Bai Jamjuree;
+  width: 45%;
+}
+
+.hero_inner_button_primary {
+  color: white;
+  font-family: Bai Jamjuree SemiBold;
+  width: 40%;
+  height: 3.5rem;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+  border-radius: 1.75rem;
+  background-color: #26BBA4;
+  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.hero_inner_button_primary:hover {
+  background-color: rgba(38, 187, 165, 0.6431372549);
+}
+
+.hero_inner_button_secondary {
+  color: white;
+  font-family: Bai Jamjuree SemiBold;
+  border-radius: 1.75rem;
+  background-color: #6174FF;
+  width: 40%;
+  border: none;
+  height: 3.5rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.hero_inner_button_secondary:hover {
+  background-color: rgba(97, 115, 255, 0.6980392157);
+}
+
+.info_inner {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.info_inner .info_inner_h2 {
+  font-family: Bai Jamjuree SemiBold;
+  text-align: center;
+  font-size: 2.25rem;
+  color: #4C545C;
+  width: auto;
+  height: auto;
+}
+.info_inner .info_inner_paragraph {
+  color: #9EABB2;
+  font-family: Bai Jamjuree;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.advantages_inner {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15rem;
+}
+.advantages_inner .advantages_inner_benefits {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 3.5rem;
+}
+.advantages_inner .benefits_1, .advantages_inner .benefits_2, .advantages_inner .benefits_3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.advantages_inner .benefits_1_h2, .advantages_inner .benefits_2_h2, .advantages_inner .benefits_3_h2 {
+  font-family: Bai Jamjuree SemiBold;
+  color: #4C545C;
+  font-size: 1.5rem;
+}
+.advantages_inner .benefits_1_par, .advantages_inner .benefits_2_par, .advantages_inner .benefits_3_par {
+  width: 60%;
+  font-family: Bai Jamjuree;
+  color: #9EABB2;
+  font-size: 1rem;
+}
+
+.advantages_2_inner {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.advantages_2_inner_text_zone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.advantages_2_inner_text_zone .advantages_2_inner_text_zone_h2 {
+  font-family: Bai Jamjuree SemiBold;
+  color: #4C545C;
+  font-size: 2.25rem;
+}
+.advantages_2_inner_text_zone .advantages_2_inner_text_zone_p {
+  text-align: center;
+  width: 80%;
+  font-family: Bai Jamjuree;
+  color: #9EABB2;
+  font-size: 1.125rem;
+}
+
+.advantages_3_inner {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.advantages_3_inner_text_zone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.19rem;
+}
+.advantages_3_inner_text_zone .advantages_3_inner_text_zone_h2 {
+  text-align: center;
+  font-family: Bai Jamjuree SemiBold;
+  color: #4C545C;
+  font-size: 2.25rem;
+}
+.advantages_3_inner_text_zone .advantages_3_inner_text_zone_p {
+  text-align: center;
+  width: 100%;
+  font-family: Bai Jamjuree;
+  color: #9EABB2;
+  font-size: 1.125rem;
+}
+
+.advantages_3_inner_content_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.advantages_3_inner_content_area ._content_area_content-box1, .advantages_3_inner_content_area ._content_area_content-box2, .advantages_3_inner_content_area ._content_area_content-box3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 33%;
+}
+.advantages_3_inner_content_area ._content-box_h5, .advantages_3_inner_content_area ._content-box2_h5, .advantages_3_inner_content_area ._content-box3_h5 {
+  text-align: center;
+  width: 100%;
+  font-family: Bai Jamjuree SemiBold;
+  color: #4C545C;
+  font-size: 1.5rem;
+}
+.advantages_3_inner_content_area ._content-box2_p, .advantages_3_inner_content_area ._content-box3_p, .advantages_3_inner_content_area ._content-box_p {
+  width: 60%;
+  text-align: center;
+  font-family: Bai Jamjuree;
+  color: #9EABB2;
+  font-size: 1.125rem;
+}
+
+.partner-logos_inner {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logos_inner_all_logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.clipboard_inner {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.clipboard_inner .clipboard_inner_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+.clipboard_inner .clipboard_inner_buttons > a {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.clipboard_inner_h2 {
+  text-align: center;
+  width: auto;
+  font-family: Bai Jamjuree SemiBold;
+  font-size: 2.25rem;
+  color: #4C545C;
+}
+
+.clipboard_inner_paragraph {
+  color: #9EABB2;
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: Bai Jamjuree;
+  width: 45%;
+}
+
+.clipboard_inner_button_primary {
+  color: white;
+  font-family: Bai Jamjuree SemiBold;
+  width: 40%;
+  height: 3.5rem;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+  border-radius: 1.75rem;
+  background-color: #26BBA4;
+  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.clipboard_inner_button_primary:hover {
+  background-color: rgba(38, 187, 165, 0.6431372549);
+}
+
+.clipboard_inner_button_secondary {
+  color: white;
+  font-family: Bai Jamjuree SemiBold;
+  border-radius: 1.75rem;
+  background-color: #6174FF;
+  width: 40%;
+  border: none;
+  height: 3.5rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.clipboard_inner_button_secondary:hover {
+  background-color: rgba(97, 115, 255, 0.6980392157);
+}
+
+.main-footer_inner {
+  padding: 2.5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-footer_inner .main-footer_inner_ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  height: 5rem;
+}
+.main-footer_inner .main-footer_inner_ul a {
+  text-align: start;
+  text-decoration: none;
+  font-family: Bai Jamjuree;
+  color: #4C545C;
+  font-size: 1.125rem;
+}
+.main-footer_inner .main-footer_inner_ul a:hover {
+  color: #26BBA4;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+  .hero .hero_inner_buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hero_inner_button_primary {
+    width: 200%;
+    height: 3.5rem;
+  }
+  .hero_inner_button_secondary {
+    width: 200%;
+    height: 3.5rem;
+  }
+  .advantages_inner {
+    flex-direction: column;
+    gap: 3.5rem;
+    height: auto;
+    width: auto;
+  }
+  ._advantages_inner_image {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  ._advantages_inner_image img {
+    width: 100%;
+    height: 100%;
+  }
+  ._advantages_2_inner_img {
+    width: auto;
+    height: auto;
+  }
+  .hero_inner_img {
+    width: auto;
+    height: auto;
+  }
+  .hero_inner_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .advantages_2_inner_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .hero_inner_h1 {
+    width: 80%;
+    height: auto;
+  }
+  .hero_inner_paragraph {
+    width: 80%;
+    height: auto;
+  }
+  .info_inner {
+    height: auto;
+    width: auto;
+  }
+  .info_inner .info_inner_h2 {
+    width: 80%;
+    height: auto;
+  }
+  .info_inner .info_inner_paragraph {
+    width: 80%;
+    height: auto;
+  }
+  .advantages_inner .advantages_inner_benefits {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages_inner .benefits_1, .advantages_inner .benefits_2, .advantages_inner .benefits_3 {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages_inner .benefits_1_par, .advantages_inner .benefits_2_par, .advantages_inner .benefits_3_par {
+    text-align: center;
+  }
+  .advantages_2_inner {
+    padding-top: 12rem;
+    width: auto;
+    height: auto;
+  }
+  .advantages_2_inner_text_zone .advantages_2_inner_text_zone_h2 {
+    text-align: center;
+    width: 80%;
+  }
+  .advantages_2_inner_text_zone .advantages_2_inner_text_zone_p {
+    width: 60%;
+  }
+  .advantages_2_inner_img {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
+  .advantages_3_inner {
+    width: auto;
+    height: auto;
+    gap: 5.6rem;
+  }
+  .advantages_3_inner_text_zone .advantages_3_inner_text_zone_h2 {
+    width: 80%;
+    text-align: center;
+  }
+  .advantages_3_inner_text_zone .advantages_3_inner_text_zone_p {
+    width: 80%;
+    text-align: center;
+  }
+  .advantages_3_inner_content_area {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 3.5rem;
+  }
+  .advantages_3_inner_content_area ._content_area_content-box1, .advantages_3_inner_content_area ._content_area_content-box2, .advantages_3_inner_content_area ._content_area_content-box3 {
+    width: auto;
+  }
+  .advantages_3_inner_content_area ._content-box_h5, .advantages_3_inner_content_area ._content-box2_h5, .advantages_3_inner_content_area ._content-box3_h5 {
+    text-align: center;
+  }
+  .partner-logos_inner {
+    padding-top: 9rem;
+    width: auto;
+    height: auto;
+  }
+  .logos_inner_all_logo {
+    flex-direction: column;
+  }
+  .clipboard_inner {
+    width: auto;
+    height: auto;
+  }
+  .clipboard_inner_h2 {
+    width: 70%;
+    height: auto;
+  }
+  .clipboard_inner_paragraph {
+    width: 60%;
+  }
+  .clipboard_inner .clipboard_inner_buttons {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 1.5rem;
+  }
+  .clipboard_inner_button_primary {
+    width: 300%;
+    height: 3.5rem;
+  }
+  .clipboard_inner_button_secondary {
+    width: 300%;
+    height: 3.5rem;
+  }
+  .main-footer_inner {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .main-footer_inner .main-footer_inner_ul {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .main-footer_inner .main-footer_inner_ul a {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .main-footer {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */

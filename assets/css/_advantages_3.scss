@@ -1,0 +1,51 @@
+.advantages_3_inner {
+    padding-top: 15rem;
+    @include flexBox(column, wrap, center, center);
+    gap: 4rem;
+}
+
+.advantages_3_inner_text_zone {
+    @include flexBox(column, wrap, center, center);
+    gap: 1.19rem;
+
+    .advantages_3_inner_text_zone_h2 {
+        text-align: center;
+        font-family: map-get($font , "font-bjs-semibold" );
+        color: map-get($advantages2-section , "--h2-color" );
+        font-size: map-get($advantages2-section , "--font-size-h2" );
+    }
+
+    .advantages_3_inner_text_zone_p {
+        text-align: center;
+        width: 100%;
+        font-family: map-get($font , "font-bjs" );
+        color: map-get($advantages3-section , "--par-color" );
+        font-size: map-get($advantages3-section , "--font-size-par" );
+    }
+}
+
+.advantages_3_inner_content_area {
+    @include flexBox(row, wrap, center, center);
+
+    ._content_area_content-box1 , ._content_area_content-box2 , ._content_area_content-box3 {
+        @include flexBox(column, wrap, center, center);
+        gap: 2.5rem;
+        width: 33%;
+    }
+
+    ._content-box_h5 , ._content-box2_h5 , ._content-box3_h5 {
+        text-align: center;
+        width: 100%;
+        font-family: map-get($font , "font-bjs-semibold" );
+        color: map-get($advantages3-section , "--h5-color" );
+        font-size: map-get($advantages3-section , "--font-size-h5" );
+    }
+
+    ._content-box2_p , ._content-box3_p , ._content-box_p {
+        width: 60%;
+        text-align: center;
+        font-family: map-get($font , "font-bjs" );
+        color: map-get($advantages3-section , "--par-color" );
+        font-size: map-get($advantages3-section , "--font-size-par" );
+    }
+}

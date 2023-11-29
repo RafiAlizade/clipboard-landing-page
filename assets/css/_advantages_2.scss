@@ -1,0 +1,24 @@
+.advantages_2_inner {
+    padding-top: 15rem;
+    @include flexBox(column, wrap, center, center);
+    gap: 7rem;
+}
+
+.advantages_2_inner_text_zone {
+    @include flexBox(column, wrap, center, center);
+    gap: 1.2rem;
+
+    .advantages_2_inner_text_zone_h2 {
+        font-family: map-get($font , "font-bjs-semibold" );
+        color: map-get($advantages2-section , "--h2-color" );
+        font-size: map-get($advantages2-section , "--font-size-h2" );
+    }
+
+    .advantages_2_inner_text_zone_p {
+        text-align: center;
+        width: 80%;
+        font-family: map-get($font , "font-bjs" );
+        color: map-get($advantages2-section , "--par-color" );
+        font-size: map-get($advantages2-section , "--font-size-par" );
+    }
+}

@@ -1,0 +1,69 @@
+.hero {
+    background: url("../images/Bitmap\ 2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero_inner {
+        padding-top: 8rem;
+        @include flexBox(column, wrap, center, center);
+        gap: 3.5rem;
+    }
+
+    .hero_inner_buttons {
+        @include flexBox(row, nowrap, center, space-around);
+        width: 30%;
+
+        > a {
+            text-decoration: none;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
+}
+
+// TEXT ZONE 
+
+.hero_inner_h1 {
+    text-align: center;
+    width: auto;
+    font-family: map-get($font , "font-bjs-semibold" );
+    font-size: map-get($main-section , "--font-size-h1" );
+    color: map-get($main-section , "--h1-color" );
+};
+
+.hero_inner_paragraph {
+    color: map-get($main-section , "--par-color" );
+    text-align: center;
+    font-size: map-get($main-section , "--font-size-par" );
+    font-family: map-get($font , "font-bjs" );
+    width: 45%;
+}
+
+.hero_inner_button_primary {
+    color: white;
+    font-family: map-get($font , "font-bjs-semibold" );
+    width: 40%;
+    height: 3.5rem;
+    border: none;
+    box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    border-radius: map-get($main-section , "--button-border-radius" );
+    background-color: map-get($main-section , "--button-primary-bg" );
+    box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    &:hover {
+        background-color: map-get($main-section , "--button-primary-hover-bg" );
+    }
+}
+
+.hero_inner_button_secondary {
+    color: white;
+    font-family: map-get($font , "font-bjs-semibold" );
+    border-radius: map-get($main-section , "--button-border-radius" );
+    background-color: map-get($main-section , "--button-secondary-bg" );
+    width: 40%;
+    border: none;
+    height: 3.5rem;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    &:hover {
+        background-color: map-get($main-section , "--button-secondary-hover-bg" );
+    }
+}

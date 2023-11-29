@@ -1,0 +1,61 @@
+.clipboard_inner {
+    padding-top: 10rem;
+    @include flexBox(column, wrap, center, center);
+    gap: 3rem;
+
+    .clipboard_inner_buttons {
+        @include flexBox(row, nowrap, center, space-around);
+        width: 30%;
+
+        > a {
+            text-decoration: none;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
+}
+
+.clipboard_inner_h2 {
+    text-align: center;
+    width: auto;
+    font-family: map-get($font , "font-bjs-semibold" );
+    font-size: map-get($clipboard , "--font-size-h2" );
+    color: map-get($clipboard , "--h2-color" );
+};
+
+.clipboard_inner_paragraph {
+    color: map-get($main-section , "--par-color" );
+    text-align: center;
+    font-size: map-get($clipboard , "--font-size-par" );
+    font-family: map-get($font , "font-bjs" );
+    width: 45%;
+}
+
+.clipboard_inner_button_primary {
+    color: white;
+    font-family: map-get($font , "font-bjs-semibold" );
+    width: 40%;
+    height: 3.5rem;
+    border: none;
+    box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    border-radius: map-get($clipboard , "--button-border-radius" );
+    background-color: map-get($clipboard , "--button-primary-bg" );
+    box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    &:hover {
+        background-color: map-get($footer , "--button-primary-hover-bg" );
+    }
+}
+
+.clipboard_inner_button_secondary {
+    color: white;
+    font-family: map-get($font , "font-bjs-semibold" );
+    border-radius: map-get($clipboard , "--button-border-radius" );
+    background-color: map-get($clipboard , "--button-secondary-bg" );
+    width: 40%;
+    border: none;
+    height: 3.5rem;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    &:hover {
+        background-color: map-get($footer , "--button-secondary-hover-bg" );
+    }
+}

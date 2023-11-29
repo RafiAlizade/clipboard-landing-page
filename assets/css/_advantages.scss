@@ -1,0 +1,30 @@
+.advantages_inner {
+    padding-top: 6rem;
+
+    @include flexBox(row, wrap, center, flex-start);
+    gap: 15rem;
+
+    .advantages_inner_benefits {
+        @include flexBox(column, wrap, flex-start, start);
+        gap: 3.5rem;
+    }
+
+    .benefits_1 , .benefits_2 , .benefits_3 {
+        @include flexBox(column, wrap, flex-start, start);
+        gap: 0.5rem;
+    }
+
+    .benefits_1_h2 , .benefits_2_h2 , .benefits_3_h2 {
+        font-family: map-get($font , "font-bjs-semibold" );
+        color: map-get($advantages-section , "--h2-color" );
+        font-size: map-get($advantages-section , "--font-size-h2" );
+    }
+
+    .benefits_1_par , .benefits_2_par , .benefits_3_par {
+        width: 60%;
+        font-family: map-get($font , "font-bjs" );
+        color: map-get($advantages-section , "--par-color" );
+        font-size: map-get($advantages-section , "--font-size-par" );
+    }
+}
+

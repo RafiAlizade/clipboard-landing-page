@@ -1,0 +1,23 @@
+.info_inner {
+    padding-top: 9rem;
+    @include flexBox(column, wrap, center, center);
+    gap: 1.2rem;
+
+    .info_inner_h2 {
+        font-family: map-get($font , "font-bjs-semibold" );
+        text-align: center;
+        font-size: map-get($info-section , "--font-size-h2" );
+        color: map-get($info-section , "--h2-color" );
+        width: auto;
+        height: auto;
+    }
+
+    .info_inner_paragraph {
+        color: map-get($info-section , "--par-color" );
+        font-family: map-get($font , "font-bjs" );
+        width: 40%;
+        height: auto;
+        text-align: center;
+        font-size: map-get($info-section , "--font-size-par" );
+    }
+}

@@ -1,0 +1,225 @@
+@media (max-width:576px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .hero .hero_inner_buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero_inner_button_primary {
+        width: 200%;
+        height: 3.5rem;
+    }
+
+    .hero_inner_button_secondary {
+        width: 200%;
+        height: 3.5rem;
+    }
+
+    .advantages_inner {
+        flex-direction: column;
+        gap: 3.5rem;
+        height: auto;
+        width: auto;
+    }
+
+    ._advantages_inner_image {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    ._advantages_inner_image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    ._advantages_2_inner_img {
+        width: auto;
+        height: auto;
+    }
+
+    .hero_inner_img {
+        width: auto;
+        height: auto;
+    }
+
+    .hero_inner_img img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .advantages_2_inner_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero_inner_h1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero_inner_paragraph {
+        width: 80%;
+        height: auto;
+    }
+
+    .info_inner {
+        height: auto;
+        width: auto;
+    }
+
+    .info_inner .info_inner_h2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .info_inner .info_inner_paragraph {
+        width: 80%;
+        height: auto;
+    }
+
+    .advantages_inner .advantages_inner_benefits {
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantages_inner .benefits_1, .advantages_inner .benefits_2, .advantages_inner .benefits_3 {
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantages_inner .benefits_1_par, .advantages_inner .benefits_2_par, .advantages_inner .benefits_3_par {
+        text-align: center;
+    }
+
+    .advantages_2_inner {
+        padding-top: 12rem;
+        width: auto;
+        height: auto;
+    }
+
+    .advantages_2_inner_text_zone .advantages_2_inner_text_zone_h2 {
+        text-align: center;
+        width: 80%;
+    }
+
+    .advantages_2_inner_text_zone .advantages_2_inner_text_zone_p {
+        width: 60%;
+    }
+
+    .advantages_2_inner_img {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+    }
+
+    .advantages_3_inner {
+        width: auto;
+        height: auto;
+        gap: 5.6rem;
+    }
+
+    .advantages_3_inner_text_zone .advantages_3_inner_text_zone_h2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .advantages_3_inner_text_zone .advantages_3_inner_text_zone_p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .advantages_3_inner_content_area {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 3.5rem;
+    }
+
+    .advantages_3_inner_content_area ._content_area_content-box1, .advantages_3_inner_content_area ._content_area_content-box2, .advantages_3_inner_content_area ._content_area_content-box3 {
+        width: auto;
+    }
+
+    .advantages_3_inner_content_area ._content-box_h5, .advantages_3_inner_content_area ._content-box2_h5, .advantages_3_inner_content_area ._content-box3_h5 {
+        text-align: center;
+    }
+
+    .partner-logos_inner {
+        padding-top: 9rem;
+        width: auto;
+        height: auto;
+    }
+
+    .logos_inner_all_logo {
+        flex-direction: column;
+    }
+
+    .clipboard_inner {
+        width: auto;
+        height: auto;
+    }
+
+    .clipboard_inner_h2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .clipboard_inner_paragraph {
+        width: 60%;
+    }
+
+    .clipboard_inner .clipboard_inner_buttons {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 1.5rem;
+    }
+
+    .clipboard_inner_button_primary {
+        width: 300%;
+        height: 3.5rem;
+    }
+
+    .clipboard_inner_button_secondary {
+        width: 300%;
+        height: 3.5rem;
+    }
+
+    .main-footer_inner {
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 3rem;
+        padding-top: 10rem;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .main-footer_inner .main-footer_inner_ul {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main-footer_inner .main-footer_inner_ul a {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .main-footer {
+        display: flex;
+        justify-content: center;
+    }
+}

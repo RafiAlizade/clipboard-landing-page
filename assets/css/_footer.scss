@@ -1,0 +1,24 @@
+.main-footer_inner {
+    padding: 2.5rem 10rem;
+    @include flexBox(row , wrap, center, space-between);
+
+
+    .main-footer_inner_ul {
+        list-style-type: none;
+        @include flexBox(row, wrap,  center, center);
+        gap: 2em;
+        height: 5rem;
+    }
+
+    .main-footer_inner_ul a {
+        text-align: start;
+        text-decoration: none;
+        font-family: map-get($font , "font-bjs" );
+        color: map-get($footer , "--li-color" );
+        font-size: map-get($footer , "--font-size-li" );
+        &:hover {
+            color: map-get($footer , "--hover-color" );
+        }
+    }
+}
+

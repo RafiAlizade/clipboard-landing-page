@@ -1,0 +1,10 @@
+.partner-logos_inner {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logos_inner_all_logo {
+    @include flexBox(row, wrap, center, center);
+    gap: 6rem;
+}
